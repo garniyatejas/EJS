@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    Student id:<%=studentId%> <br>
+    Student Name:<%=studentName%> <br>
+    Student Marks:<%=studentMarks%> <br>
+    Result:
+    <%if(studentMarks>=35){%>
+        pass
+        <%}else{%>
+            Fail
+        <%}%>
+        <%for(var i=0;i<subject.length;i++){%>
+            <li> 
+                <%=subject[i].name%>:<%=subject[i].marks%>
+            </li>
+            <%}%>
+
+</body>
+</html>

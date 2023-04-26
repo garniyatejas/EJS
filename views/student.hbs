@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    Student id:{{studentId}} <br>
+    Student Name:{{studentName}} <br>
+    Student Marks:{{studentMarks}} <br>
+    
+    <table border=1>
+    <tr><th>subject</th><th>marks</th></tr>
+    {{#each subject}}
+    <tr>
+   <td>{{name}}</td>
+   <td>{{marks}}</td>
+   </tr>
+    {{/each}}
+ </table>
+</body>
+</html>
